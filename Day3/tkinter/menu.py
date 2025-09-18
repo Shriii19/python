@@ -1,0 +1,22 @@
+from  tkinter import *
+root =Tk()
+root.geometry("200x150")
+
+menu = Menu(root)
+root.config(menu=menu)
+filemenu = Menu(menu)
+menu.add_cascade(label="File", menu=filemenu)
+filemenu.add_command(label="New")
+filemenu.add_command(label="Open")
+filemenu.add_separator()
+filemenu.add_command(label="Exit", command=root.quit)
+editmenu = Menu(menu)
+menu.add_cascade(label="Edit", menu=editmenu)
+editmenu.add_command(label="Cut")
+editmenu.add_command(label="Copy")
+editmenu.add_command(label="Paste")
+helpmenu = Menu(menu)  
+menu.add_cascade(label="Help", menu=helpmenu)
+helpmenu.add_command(label="About")
+
+root.mainloop()
