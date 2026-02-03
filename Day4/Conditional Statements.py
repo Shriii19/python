@@ -26,25 +26,30 @@ else:
 
 if marks2 >=90:
     print("grade is A")
+    grade2="A"
 
 elif marks2 >=80 and marks2<=89:
     print("grade is B")
+    grade2="B"
 
 elif marks2 >=70 and marks2 <=79:
     print("grade is C")
+    grade2="C"
 
 else:
     print("grade is D need score more marks")
 
 if marks3 >=90:
     print("grade is A")
+    grade3="A"
 
 elif marks3 >=80 and marks3 <=89:
     print("grade is B")
+    grade3="B"
 
 elif marks3 >=70 and marks3 <=79:
     print("grade is C")
-
+    grade3="C"
 else:
     print("grade is D need score more marks")
 
@@ -55,6 +60,8 @@ print("welcome to result section see ur grade here")
 print("Name:" , name)
 print("college Name:" , name)
 print(f"Your Marks for PHY is {marks1} and Grade is {grade1}")
+print(f"Your Marks for CHEM is {marks2} and Grade is {grade2}")
+print(f"Your Marks for BIO is {marks3} and Grade is {grade3}")
 print("your percentage:" , Total/4)
 
 
