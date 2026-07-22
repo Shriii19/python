@@ -4,12 +4,23 @@
 #calss nd object or Instances
 print("**class nd obj**")
 class Car:  #class
+        total_Car = 0
+
         def __init__ (self, brand, model): #object
                 self.brand = brand
                 self.model = model
+                Car.total_Car += 1
 
         def fule(self):
                 return "petrol or diesel"
+
+        @classmethod
+        def get_total_car(cls):
+                return cls.total_Car
+
+        @staticmethod
+        def general_description():
+                return "Cars are used for transportation."
 
 
 Car1 = Car ("tata", "Neno")
@@ -51,4 +62,20 @@ print(ev.fule())
 
 
 print("*** polyi nd inheri use in one ")
+
+#-----------------------------------------------------------------
+
+#class method and static method
+print("**class method and static method**")
+
+Car("tata", "Punch")
+Car("tata", "Harrier")
+Car("tata", "Nexon")
+
+print(Car.get_total_car())
+# print(Car.general_description())
+
+#static method can be called using class name or object name
+print(Car.general_description())
+
 
